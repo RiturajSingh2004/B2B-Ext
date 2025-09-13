@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="logo">AI</div>
+      <h1>AI Chat Assistant</h1>
+      <button class="theme-toggle" id="themeToggle" title="Toggle theme">
+        <svg class="theme-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path class="sun" d="M12 1v2m0 18v2M4.22 4.22l1.42 1.42m12.72 12.72l1.42 1.42M1 12h2m18 0h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"></path>
+          <circle class="sun" cx="12" cy="12" r="5"></circle>
+          <path class="moon" d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+        </svg>
+      </button>
+    </div>
+    
+    <div class="url-container">
+      <div class="current-page">Current Page</div>
+      <div class="page-title" id="pageTitle">Loading...</div>
+      <div class="page-url" id="pageUrl">Getting current tab...</div>
+    </div>
+    
+    <div class="chat-container" id="chatContainer">
+      <div class="welcome-message">
+        <div class="welcome-text">👋 Hi there! I'm your AI assistant.</div>
+        <div class="welcome-subtext">I can help you analyze and discuss the content of the current webpage. What would you like to know?</div>
+      </div>
+    </div>
+    
+    <div class="loading" id="loading">
+      <div class="spinner"></div>
+      <div>Processing...</div>
+    </div>
+    
+    <div class="error" id="error"></div>
+    
+    <form id="chatForm" class="chat-form">
+      <input type="text" id="messageInput" placeholder="Ask me about this page..." autocomplete="off">
+      <button type="submit" class="send-button">Send</button>
+    </form>
+    
+    <div class="button-container">
+      <button id="clearChatBtn" class="clear-button">Clear Chat</button>
+    </div>
+    
+    <footer>
+      <center><p>Powered by github.com/RiturajSingh2004</p></center>
+    </footer>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
